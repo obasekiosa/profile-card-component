@@ -1,5 +1,7 @@
 import './App.scss';
-import { ProfileCard } from './components/components';
+import topImage from "./assets/images/bg-pattern-top.svg";
+import bottomImage from "./assets/images/bg-pattern-bottom.svg";
+import { AttributeCard, ProfileCard } from './components/components';
 
 function App() {
   const data = {
@@ -12,21 +14,21 @@ function App() {
   }
   return (
     <div className="App">
+      <div className='main'>
+        <ProfileCard profileData={data} />
+      </div>
 
-      <ProfileCard profileData={data} />
-     
-        Victor Crest
-        26
-        London
+      <div className='top-bg-img'>
+        <img src={topImage} alt='' />
+      </div>
+      
+      <div className='bottom-bg-img'>
+        <img src={bottomImage} alt=''/>
+      </div>
 
-        80K
-        Followers
-
-        803K
-        Likes
-
-        1.4K
-        Photos
+      <div style={{ position: "relative", left: "0px", bottom: "-50px" }}>
+        <AttributeCard url="https://github.com/obasekiosa" name="obasekiosa" />
+      </div>
     </div>
   );
 }
