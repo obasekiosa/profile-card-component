@@ -1,14 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { ProfileCard } from './components/components';
 
 function App() {
+  const data = {
+    name: "",
+    age: 26,
+    location: "",
+    numberOfFollowers: 80000,
+    numberOfLikes: 803000,
+    numberOfPhotos: 1400
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+
+      <ProfileCard profileData={data} />
+     
         Victor Crest
         26
         London
@@ -21,15 +27,6 @@ function App() {
 
         1.4K
         Photos
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }

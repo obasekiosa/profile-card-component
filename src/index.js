@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AttributeCard } from './components/components';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <AttributeCard url="https://github.com/obasekiosa" name="obasekiosa"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
