@@ -35,7 +35,6 @@ export const ProfileCard = () => {
                     </div>
                     <span className="location">London</span>
                 </div>
-                {/* <hr/>              */}
             </div>
             <div className="profile-stats">
                 <Stats label="Followers" value="80"/>
